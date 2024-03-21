@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <div class="logo">
+    <img src='../../../assets/firma.png' alt="Logo">
+  </div>
+  <ul class="nav-items">
+    <li><a (click)="redirecHome()">
+      Home
+    </a></li>
+    <li><a (click)="redirecTracks()">
+      Tracks
+    </a></li>
+
+  </ul>
+</nav>
+<div *ngIf="loading">
+  <ng-template #indicatorTemplate><span nz-icon nzType="loading"></span></ng-template>
+    <nz-spin nzSimple [nzIndicator]="indicatorTemplate"></nz-spin>
+
+  <div class="spinner"></div>
+</div>

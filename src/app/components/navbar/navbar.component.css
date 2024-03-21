@@ -1,0 +1,64 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #66F25C;
+  color: #282838;
+  padding: 0px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 9px;
+  border: 1px solid #282838;
+}
+
+.logo img {
+  width: 120px; /* Ajusta el tamaño del logo según sea necesario */
+  height: auto;
+  color: #282838;
+  transition: transform 0.3s;
+}
+.logo img:hover {
+  text-decoration: underline;
+  transform: translateY(-3px) rotate(3deg); /* Aplica una rotación y desplazamiento hacia arriba */
+}
+.nav-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100%;
+}
+
+.nav-items li {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  margin-left: 20px; /* Espacio entre los elementos */
+  padding-right: 20px;
+}
+
+.nav-items li a {
+  color: #282838;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  transition: transform 0.3s; /* Agrega una transición suave para la transformación */
+}
+
+.nav-items li a:hover {
+  transform: translateY(-3px) rotate(3deg); /* Aplica una rotación y desplazamiento hacia arriba */
+}
+
+.nav-items li:last-child {
+  border-right: none; /* Elimina el borde derecho del último elemento */
+}
+.nav-items li:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 2px; /* Ancho de la línea */
+  background-color: #141414; /* Color de la línea */
+  height: 100%; /* Altura de la línea igual al 100% del contenedor */
+  margin-left: 20px; /* Espacio entre la línea y el siguiente elemento */
+}
+i {
+  font-size: 24px;
+}
